@@ -34,6 +34,7 @@ def on_open(ws):
 def on_close(ws):
     print('closed connection')
 
+# 每一笔传送过来的数据，调用on_message循环处理
 def on_message(ws, message):
     global closes, in_position
     
